@@ -1,0 +1,123 @@
+/*stylesheet for website of Vivek GOvindasamy*/
+
+#my{
+zoom: 100%;
+}
+
+body {
+  font-family: "Lora",verdana;
+  background-color: #FBFAF1;
+  font-size: medium;
+  color: #22223B;
+  margin: 0px;
+}
+
+
+.header {
+  background-color: #5CA4A9;
+  opacity: 0;
+  background-size: 650px;
+  padding-top:15px;
+  opacity: 1;
+  width: 100%;
+  text-align: center;
+  margin-top:0px;
+  margin-right:0px;
+  margin-left:0px;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-size: 40px;
+  color: #FBFAF1;
+  /*text-shadow: 0 0 5px #fff,*/
+    
+  /*
+  background: -webkit-linear-gradient(#e0891d, #ffffff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  */
+}
+
+.subheading{
+  font-size: 1.3em;
+}
+
+.main_content{
+  margin-left: 170px;
+  margin-right:30px;
+  margin-bottom:30px;
+}
+
+
+.about_me{
+  margin-right: 200px;
+}
+
+
+.sidebar {
+  position:fixed;
+  height: 75%;
+  padding: 0;
+  margin-top: 150px;
+  left: 30px;
+}
+
+.sidebar_box {
+  background: #5CA4A9;
+  padding: 10px;
+  margin: 10px;
+  /*
+  border-style: solid;
+  border-width: 0.05em;
+  border-color: #22223B;
+  */
+  text-align:center;
+}
+
+.sidebar_item{
+  color: #FBFAF1;
+}
+
+a:link.sidebar_item { text-decoration: none; }
+a:visited.sidebar_item { text-decoration: none; }
+a:hover.sidebar_item { text-decoration: underline; }
+a:active.sidebar_item { text-decoration: underline; }
+
+.profile_pic {
+  float: right;
+  margin-right: 10px;
+  height: 200px;
+}
+
+/*
+ul {
+  margin: 0 0 0 0;
+  line-height: 1.5;
+  list-style: none;
+}
+*/
+
+.b1 {
+/*  list-style-image: url(bee_15.png);*/
+/*  background: url ("bee_50.jpg");*/
+
+}
+
+a{
+  line-height: 2em;
+  color: #22223B;
+}
+
+p{
+  line-height: 1.5em; 
+  padding-top: 0;
+  padding-bottom: 0;  
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
+
+.institute{
+  font-size: 1.1em;
+}
