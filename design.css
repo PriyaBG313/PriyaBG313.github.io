@@ -1,8 +1,5 @@
 /*stylesheet for website of Priya Govindasamy*/
 
-#my{
-zoom: 100%;
-}
 
 body {
   font-family: "Lora",verdana;
@@ -15,10 +12,8 @@ body {
 
 .header {
   background-color: #5CA4A9;
-  opacity: 0;
   background-size: 100%;
   padding-top:1%;
-  opacity: 1;
   width: 100%;
   text-align: center;
   margin: 0%;
@@ -40,7 +35,7 @@ body {
 }
 
 .subheading{
-  font-size: 1.3em;
+  font-size: 130%;
 }
 
 .main_content{
@@ -51,22 +46,23 @@ body {
 
 
 .about_me{
-  margin-right: 20%;
+  padding-right: 20%;
 }
 
 
 .sidebar {
   position:fixed;
+  width: 9%;
   height: 75%;
-  padding: 0;
-  margin-top: 11%;
-  left: 2.5%;
+  padding: 0%;
+  margin-top: 10%;
+  margin-left: 2.5%;
 }
 
 .sidebar_box {
   background: #5CA4A9;
-  padding: 10px;
-  margin: 10px;
+  padding: 3%;
+  margin-top: 10%;
   /*
   border-style: solid;
   border-width: 0.05em;
@@ -90,34 +86,21 @@ a:active.sidebar_item { text-decoration: underline; }
   height: 40%;
 }
 
-/*
-ul {
-  margin: 0 0 0 0;
-  line-height: 1.5;
-  list-style: none;
-}
-*/
-
-.b1 {
-/*  list-style-image: url(bee_15.png);*/
-/*  background: url ("bee_50.jpg");*/
-
-}
 
 a{
-  line-height: 2em;
+  line-height: 200%;
   color: #22223B;
 }
 
 p{
-  line-height: 1.5em; 
-  padding-top: 0;
-  padding-bottom: 0;  
-  margin-top: 0;
-  margin-bottom: 0;
+  line-height: 150%; 
+  padding-top: 0%;
+  padding-bottom: 0%;  
+  margin-top: 0%;
+  margin-bottom: 0%;
   
 }
 
 .institute{
-  font-size: 1.1em;
+  font-size: 101%;
 }
