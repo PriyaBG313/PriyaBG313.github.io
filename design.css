@@ -83,7 +83,7 @@ a:active.sidebar_item { text-decoration: underline; }
 .profile_pic {
   float: right;
   margin-right: 1%;
-  height: 40%;
+  width: 15%;
 }
 
 
