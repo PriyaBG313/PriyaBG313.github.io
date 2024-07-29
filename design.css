@@ -65,6 +65,12 @@ body {
   }
 }
 
+@media screen and (max-width: 700px ){
+  .profile_pic {
+    display: none;
+  }
+}
+
 .sidebar_box {
   background: #5CA4A9;
   padding: 3%;
