@@ -42,13 +42,13 @@
 		<div class="about_me">
 			<a name="About_Me"><h3 class="subheading">About Me</h3>
 			<p>
-			  Currently a Ph.D. student at the University of California, Irvine. My area of study is Computer Science. I received my Bachelor's degree from Vellore Institute of Technology in 2023. 
+			  I am currently a Ph.D. student at the University of California, Irvine. My area of study is Operating System Security. I received my Bachelor's degree from Vellore Institute of Technology in 2023. 
 			</p>
 			<p>
-			  In my graduate research I have been involved in performing analysis to identify bugs in the eBPF subsystem.
-			  This involves determining the execution context of helper functions and kfuncs used in the eBPF subsystem. 
-			  I am currently working on designing and implementing a tool that uses static analysis to check whether spinlocks and 
-			  sleeping functions are used in the correct context in the eBPF subsystem.
+			  In my graduate research, I have been involved in performing analysis to identify locking violations in the BPF subsystem. 
+			  I am currently designing and implementing a tool called Spinner that identifies context confusion and nested BPF locking bugs in BPF helper functions and kfuncs.
+				It uses static analysis to check whether spinlocks and sleeping functions are used in the appropriate execution context in the eBPF subsystem. 
+				Spinner can also find cases of self-deadlocks that occur due to nested BPF programs.
 			</p>
 		</div>
 	</section>
