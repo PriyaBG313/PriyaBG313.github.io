@@ -41,14 +41,38 @@
 	<section>
 		<div class="about_me">
 			<a name="About_Me"><h3 class="subheading">About Me</h3>
-			<p>
+			<p style="margin-bottom: 20px;">
 			  I am currently a Ph.D. student at the University of California, Irvine. My area of study is Operating System Security. I received my Bachelor's degree from Vellore Institute of Technology in 2023. 
 			</p>
+			<p style="margin-bottom: 20px;">
+				In my graduate research, I am currently studying code comments that are used to document the safety of unsafe Rust code in the Linux kernel. 
+				Based on this, I am developing a categorization of safety comments and investigating the ways in which these comments 
+				change with time. I am also working on finding a way to formalize these comments. 
+				This will lay the foundation for verifying whether these safety comments contain the complete set of preconditions 
+				necessary to ensure that the unsafe Rust code can be safely used.
+			</p>
 			<p>
-			  In my graduate research, I have been involved in performing analysis to identify locking violations in the BPF subsystem. 
-			  I am currently designing and implementing a tool called Spinner that identifies context confusion and nested BPF locking bugs in BPF helper functions and kfuncs.
+			  I have also been involved in performing analysis to identify locking violations in the BPF subsystem. 
+			  I designed and implemented a tool called Spinner that identifies context confusion and nested BPF locking bugs in BPF helper functions and kfuncs.
 				It uses static analysis to check whether spinlocks and sleeping functions are used in the appropriate execution context in the eBPF subsystem. 
-				Spinner can also find cases of self-deadlocks that occur due to nested BPF programs.
+				Spinner can also find cases of self-deadlocks that occur due to nested BPF programs. Spinner has been able to find 34 such bugs.
+			</p>
+		<h2>Impact</h2>
+			<p>I several bugs found by Spinner to the Linux community. I have also submitted a kernel patch to fix some of these bugs.</p>
+			<p>
+				[1] <a href="https://lore.kernel.org/bpf/CAADnVQ+PM3htCksKHp0uN8k0Ke-v-j2K4xPPrxtuWZNyeDAZWA@mail.gmail.com/T/">Report of Context Confusion bug in trie_update_elem and trie_delete_elem</a><br>
+				[2] <a href="https://lore.kernel.org/bpf/CAPPBnEYgDtaOWYkk1rrMraZ4x3W-BQdi5nf2hURX8=xGxwr-1Q@mail.gmail.com/T/">Report of Context Confusion bug in bpf_common_lru_push_free</a><br>
+				[3] <a href="https://www.spinics.net/lists/bpf/msg124825.html">Report of Context Confusion bug in bpf_percpu_lru_push_free</a><br>
+				[4] <a href="https://lore.kernel.org/bpf/CAPPBnEaCB1rFAYU7Wf8UxqcqOWKmRPU1Nuzk3_oLk6qXR7LBOA@mail.gmail.com/T/">Report of Nested Locking bug in bpf_percpu_lru_pop_free</a><br>
+				[5] <a href="https://lore.kernel.org/bpf/6719482a-4135-40e1-8fb9-4f6e593fc71b@linux.dev/T/">Report of Context Confusion bug in bpf_percpu_lru_pop_free</a><br>
+				[6] <a href="https://lore.kernel.org/bpf/CAPPBnEaJRP5YZTQ-xY4gt6eYxS8_WG0e4pwDYXvn5OtrjyFzaw@mail.gmail.com/T/">Report of Context Confusion bug in percpu_counter_add_batch</a><br>
+				[7] <a href="https://lore.kernel.org/bpf/CAPPBnEZQOVp19ESv35wZpmXzcrJmcCdt-H_0KirAtA6SCdMqoA@mail.gmail.com/T/">Report of Context Confusion bug in percpu_counter_sum</a><br>
+				[8] <a href="https://lore.kernel.org/bpf/CAPPBnEYm+9zduStsZaDnq93q1jPLqO-PiKX9jy0MuL8LCXmCrQ@mail.gmail.com/T/">Report of Nested Locking bug in pcpu_freelist_push</a><br>
+				[9] <a href="https://lore.kernel.org/bpf/CAADnVQLAHwsa+2C6j9+UC6ScrDaN9Fjqv1WjB1pP9AzJLhKuLQ@mail.gmail.com/T/">Report of Nested Locking bug in pcpu_freelist_pop</a><br>
+				[10] <a href="https://lore.kernel.org/bpf/CAPPBnEZBUWnRQ+mWpHXn2t7cfn=RVuWQZ_ojQte0gQpksus1Gw@mail.gmail.com/T/">Report of Context Confusion bug in bpf_common_lru_pop_free</a><br>
+				[11] <a href="https://lore.kernel.org/bpf/CAPPBnEZQDVN6VqnQXvVqGoB+ukOtHGZ9b9U0OLJJYvRoSsMY_g@mail.gmail.com/T/">Report of Nested Locking bug in bpf_common_lru_pop_free</a><br>
+				[12] <a href="https://lore.kernel.org/bpf/CAPPBnEajj+DMfiR_WRWU5=6A7KKULdB5Rob_NJopFLWF+i9gCA@mail.gmail.com/T/">Report of Nested Locking Bug in bpf_common_lru_push_free</a><br>
+				[13] <a href="https://kernel.googlesource.com/pub/scm/linux/kernel/git/ardb/linux/+/c83508da5620ef89232cb614fb9e02dfdfef2b8f">Patch to fix nested locking bugs</a>
 			</p>
 		</div>
 	</section>
